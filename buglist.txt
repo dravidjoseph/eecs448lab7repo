@@ -1,0 +1,16 @@
+/*******************************************************
+* @file: buglist.txt
+* @author: Dravid Joseph
+* @date: 4/18/16
+* @brief: 4 Bug Guess
+********************************************************/
+
+
+1. isEmpty() seems to return false whether the list is empty or not.  
+
+2. size() seems to return 1 more than the actual size of the list.  This is either because size() is returning one more than the actual length of the list, or the constructor, when initializing the size, actually initializes m_size to 1 instead of zero.  From other tests that increment size, it is apparent that the size of the list is never off by more than 1.
+
+3. The addBack method works when adding the first element to the list, but then duplicates that result the next time the method is called,
+regardless of the value the user passed in.
+
+4. The removeFront method seems to remove from the back.
